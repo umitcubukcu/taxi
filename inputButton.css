@@ -1,0 +1,82 @@
+.taksimetre{
+    width: 100%;
+    margin-top: 1rem;
+    position: relative;
+    box-shadow: 1px 1px 8px 2px;
+    border-radius: 8px;
+}
+
+.range{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+    background-color: beige;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+.wage{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 1.5rem;
+    background-color: #4FBDBA;
+}
+.wage h3{
+    margin-bottom: 3px;
+    display: inline-flex;
+    border-bottom: 2px solid black;
+}
+.input{
+    width: 55%;
+    margin: 1rem auto;
+}
+
+.map-title{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #4FBDBA;
+}
+.map-title h3{
+    margin-bottom: 3px;
+}
+#rangeInput{
+    -webkit-appearance: none;
+    height: .8rem;
+    border-radius: 1rem;
+    background: linear-gradient(90deg, rgb(168, 168, 168) 60%, rgb(168, 168, 168) 80%);
+    width: 100%;
+    opacity: 50%;
+    transition: all .2s linear;
+}
+#rangeInput:hover{
+    opacity: 100%;
+}
+
+#rangeInput::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.5rem;
+    background-color: rgb(0, 0, 0);
+    height: 1.5rem;
+    border-radius: 50%;
+    transition: all .2s linear;
+}
+
+#rangeInput::-webkit-slider-thumb:hover{
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: rgb(0, 0, 0);
+}
+
+
+#rangeInput:hover{
+    cursor: hand;
+}
+.value {
+    font-size: 1.3rem;
+}
+
+span#km{
+    font-size: 1.3rem;
+}

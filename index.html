@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SİTELER TAKSİ</title>
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+    <!-- Google fonts imported--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="inputButton.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="https://kit.fontawesome.com/125470fc19.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="grid-container">
+    <header>
+        <div class="flow">
+            <p> Zonguldak - Çaycuma - Devrek - Gökçebey'de 7/24 hizmetinizdeyiz. Bizi doğrudan arayabilir ya da WhatsApp'dan mesaj bırakabilirsiniz. SİTELER TAKSİ.</p>
+        </div>
+        <div class="info">
+            <a href="tel:+90 533 310 66 02"><i class="fa-solid fa-phone fa-lg"></i>Hemen Ara !</a>
+        </div>
+    </header>
+    <nav>
+        <div class="title"><h1>SİTELER TAKSİ</h1></div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Anasayfa</a></li>
+                <li><a href="">Hakkımızda</a></li>
+                <li><a href="">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="imgs">
+            <img id="img" src="">
+            <div class="controller">
+                <button class="btn left" onclick="indexAlter(-1)">&#10094</button>
+                <button class="btn right" onclick="indexAlter(1)">&#10095</button>
+                <script src="slider.js"></script>
+            </div>
+        </div>
+    </section>
+    <aside>
+        <div class="taksimetre">
+            <div class="range">
+                <div class="wage">
+                    <h3>Ne Kadar Öderim?</h3>
+                </div>
+                <div class="input">
+                    <span id="km">Mesafe: 0 km</span>
+                    <input type="range" name="rangeSelector" id="rangeInput" min="0" max="100" value="0" oninput="rangeInput()" step="1">
+                </div>
+                <p class="value">Taksimetre:
+                    <span id="value">0 TL
+                </span></p>
+            </div>
+        </div>
+        <div class="map-container">
+            <div class="map-title">
+                <h3>Neredeyiz ?</h3>
+            </div>
+            <div id="map">
+                <script src="map.js"></script>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div class="wp">
+            <a href="https://api.whatsapp.com/send?phone=905333106602&text=Merhaba, Taksi istiyorum."><img src="svg/wp.svg" alt="">Taksi!</a>
+        </div>
+    </footer>
+</div>
+<script src="calculateWage.js"></script>
+</body>
+</html>
